@@ -10,3 +10,7 @@
 #main-menu {
 	height: 56px;
 }
+
+.card img {
+	aspect-ratio: 4/3;
+}
