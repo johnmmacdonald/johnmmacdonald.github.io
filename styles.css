@@ -3,6 +3,6 @@
 #body-page3 [href="page3.html"],
 #body-page4 [href="page4.html"],
 #body-page5 [href="page5.html"] { 
-	color: black;
+	/* color: black; */
 	font-weight: 500;
 }
