@@ -8,9 +8,12 @@
 
 #main-menu {
 	height: 56px;
-	z-index: 1000;
 }
-
+.main-menu ul {
+	z-index: 1000;
+    position: relative;
+    /* background-color: white; */
+}
 .card img {
 	aspect-ratio: 4/3;
 }
