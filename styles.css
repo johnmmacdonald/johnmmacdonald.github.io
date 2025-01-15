@@ -8,6 +8,7 @@
 
 #main-menu {
 	height: 56px;
+	z-index: 1000;
 }
 
 .card img {
