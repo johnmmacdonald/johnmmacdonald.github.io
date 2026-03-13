@@ -1,0 +1,247 @@
+/* Custom Properties */
+:root {
+    --background-color: lightyellow;
+    --background-color-tablet: thistle;
+    --background-color-desktop: darkred;
+    --accent-color: coral;
+    --alert-color: aquamarine;
+    --body-text-color: black;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+}
+
+@media (min-width: 768px) {
+    body {
+        background-color: var(--background-color-tablet);
+    }
+
+    #hero {
+        border: 6px solid hotpink
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        color: white;
+        background-color: var(--background-color-desktop);
+    }
+}
+
+/* Container */
+.container {
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 800px;
+}
+
+/* Fonts & typography */
+* {
+    font-family: Lato, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Oswald, sans-serif;
+}
+
+h2 {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+.mission-statement {
+    font-family: Quintessential, serif;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 900;
+    color: white;
+    text-shadow: 0px 0px 1px #888;
+}
+
+
+
+img {
+    max-width: 100%;
+}
+
+#hero {
+    padding: 0;
+    height: 400px;
+    background-color: var(--accent-color);
+    background-image: url("img/sean-oulashin-KMn4VEeEPR8-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    backdrop-filter: blur(4px);
+
+}
+
+#hero-button {
+    padding-top: 1rem;
+}
+
+#main-menu {
+    background-color: var(--alert-color);
+}
+
+
+
+
+/* Main menu */
+#main-menu ul {
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+    display: flex;
+    padding: 0;
+
+    a {
+        display: block;
+        color: blue;
+        text-decoration: none;
+        padding: .25rem .5rem;
+
+        &:hover {
+            color: coral;
+            text-decoration: underline;
+        }
+
+        &:active {
+            color: black;
+        }
+
+    }
+}
+
+#navbar-toggler {
+    position: relative;
+    top: 0;
+    font-size: 2rem;
+    color: dimgray;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+
+.collapse {
+    display: none;
+}
+
+@media (min-width: 641px) {
+    #navbar-toggler {
+        display: none;
+    }
+
+    .collapse {
+        display: block;
+    }
+
+    #main-menu ul {
+        flex-direction: row;
+        border: none;
+    }
+
+}
+
+.fixed-top {
+    margin-top: 80px;
+}
+
+.fixed-top nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 2rem;
+    z-index: 1030;
+}
+
+@media (min-width: 641px) {
+    .fixed-top {
+        margin-top: 0;
+    }
+
+    .fixed-top nav {
+        position: relative;
+        left: 0;
+    }
+
+}
+
+/* Projects */
+#projects {
+    display: flex;
+    flex-direction: column;
+    margin: 0 -.5rem;
+}
+
+#projects>div {
+    padding: 0 .5rem;
+}
+
+@media (min-width: 768px) {
+    #projects {
+        flex-direction: row;
+    }
+}
+
+/* Buttons */
+.btn {
+    font-size: 1rem;
+    border: 1px solid silver;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn:active {
+    background-color: red;
+}
+
+/* Footer */
+
+#footer {
+    background-color: black;
+    color: white;
+    padding: 1rem 0;
+}
