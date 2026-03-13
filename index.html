@@ -1,11 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>John's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Quintessential&display=swap"
+        rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/8b2d1203cb.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <h1>First file</h1>
+
+<body class="fixed-top">
+    <header>
+        <div class="container">
+            <img src="https://placehold.co/60x60">
+
+            <h1>John's Portfolio</h1>
+        </div>
+        <nav id="main-nav">
+        <button id="navbar-toggler" type="button"><i class="fa fa-bars"></i></button>
+        <div id="main-menu" class="collapse">
+            <ul class="container">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <!-- Hero section -->
+        <div id="hero">
+            <div id="hero-content">
+                <div class="mission-statement">Connecting people through human-centric web design</div>
+
+                <div id="hero-button">
+                    <a href="#" type="button" class="btn">Contact Me!</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- About section -->
+        <section id="about" class="container">
+            <h2>About</h2>
+            <p>Lorem ipsum <strong>dolor sit amet consectetur</strong>, adipisicing elit. Iste maiores omnis odit, cum
+                nesciunt dolorem
+                fugit aperiam voluptatibus doloremque quaerat deleniti distinctio? Ut excepturi rerum quibusdam sint
+                nisi, a in?</p>
+        </section>
+
+        <!-- Projects section -->
+        <section id="projects-section" class="container">
+            <h2>Projects</h2>
+            <div id="projects">
+                <div>
+                    <h3>Project 1</h3>
+                    <img src="https://placehold.co/600x400/orange/white">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste maiores omnis odit, cum nesciunt
+                        dolorem fugit aperiam voluptatibus doloremque quaerat deleniti distinctio? Ut excepturi rerum
+                        quibusdam sint nisi, a in?</p>
+                </div>
+                <div>
+                    <h3>Project 2</h3>
+                    <img src="https://placehold.co/600x400/aqua/white">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste maiores omnis odit, cum nesciunt
+                        dolorem fugit aperiam voluptatibus doloremque quaerat deleniti distinctio? Ut excepturi rerum
+                        quibusdam sint nisi, a in?</p>
+                </div>
+                <div>
+                    <h3>Project 3</h3>
+                    <img src="https://placehold.co/600x400/purple/white">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste maiores omnis odit, cum nesciunt
+                        dolorem fugit aperiam voluptatibus doloremque quaerat deleniti distinctio? Ut excepturi rerum
+                        quibusdam sint nisi, a in?</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Skills section -->
+        <section id="skills" class="container">
+            <h2>Skills</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At voluptates perferendis similique ea, iusto
+                nulla itaque commodi nemo nobis pariatur assumenda ut ipsam quasi, cum dolores enim eius. Odit, fugiat.
+            </p>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact" class="container">
+            <h2>Contact</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et possimus, illum quo cupiditate harum
+                facilis. Blanditiis aliquid mollitia nam velit quia ullam neque reiciendis soluta a, repudiandae iure.
+                Quam, adipisci.</p>
+        </section>
+
+        <!-- Resume section -->
+        <section id="resume" class="container">
+            <h2>Resume</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto reprehenderit mollitia, aspernatur
+                tempore rerum earum consectetur, obcaecati ipsam veritatis suscipit magni fugiat repellat quia voluptate
+                laboriosam saepe unde deleniti ducimus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto reprehenderit mollitia, aspernatur
+                tempore rerum earum consectetur, obcaecati ipsam veritatis suscipit magni fugiat repellat quia voluptate
+                laboriosam saepe unde deleniti ducimus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto reprehenderit mollitia, aspernatur
+                tempore rerum earum consectetur, obcaecati ipsam veritatis suscipit magni fugiat repellat quia voluptate
+                laboriosam saepe unde deleniti ducimus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto reprehenderit mollitia, aspernatur
+                tempore rerum earum consectetur, obcaecati ipsam veritatis suscipit magni fugiat repellat quia voluptate
+                laboriosam saepe unde deleniti ducimus!</p>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="container">
+            &copy; John MacDonald 2026
+        </div>
+    </footer>
+    <script>
+        let toggler = document.getElementById("navbar-toggler");
+        let menu = document.getElementById("main-menu");
+
+        toggler.addEventListener("click", function () {
+            menu.classList.toggle("collapse");
+        });
+    </script>
 </body>
+
 </html>
