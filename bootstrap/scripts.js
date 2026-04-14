@@ -11,5 +11,4 @@ fetch("main-menu.html")
 
 document.addEventListener('DOMContentLoaded', function () {
 	loadMenus();
-
 });
